@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  ExpandableRow, NotificationIcon, RowNotification, NotificationType, ModalService,
+  ExpandableRow, RowNotification, NotificationType, ModalService,
   ModalButtonConfiguration, SortChangedArgs, ListHeaderComponent, SortDirection
 } from 'vgr-komponentkartan';
 import { Examples } from '../examples';

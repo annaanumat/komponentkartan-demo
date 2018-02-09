@@ -85,14 +85,23 @@
               </tr>
               <tr>
                 <td>notification : RowNotification</td>
-                <td>Ger möjligheten att lägga en notifiering på raden. En
-                  <code>NotificationType</code> har en icon (Error, Warning, Information) och en typ. Notifieringar kan visas hela
-                  tiden -
+                <td>Ger möjligheten att lägga en notifiering på raden.
+                  <br>
+                  <br>
+                  <code>type: NotificationType</code> bestämmer hur raden ska visas: Notifieringar kan visas hela tiden -
                   <code>NotificationType.Permanent</code>, visas i samband med att raden minimeras -
                   <code>NotificationType.ShowOnCollapse</code> eller när raden tas bort -
-                  <code>NotificationType.ShowOnRemove</code>
+                  <code>NotificationType.ShowOnRemove</code>.
+                  <br>
+                  <br>
+                  <code>icon: string</code> Här anger man vilken ikon som ska visas, för att rätt ikon ska visas måste du ange
+                  dess css-klass. Komplett lista över ikoner och dess klassnamn hittar du
+                  <a href="/icons">här</a>.
+                  <br>
+                  <br>
+                  <code>message: string</code> är själv notifigeringsmeddelanden.
                 </td>
-                <td>[notification]="{{'{'}} message: 'Personen är inaktiv', icon: NotificationIcon.Exclamation, type: notificationTypes.Permanent{{'}'}}"
+                <td>[notification]="{{'{'}} message: 'Personen är inaktiv', icon: 'vgr-icon-ok', type: notificationTypes.Permanent{{'}'}}"
                   <strong>OBS!</strong> För att binda till enums i html, måste en rad till i .ts-filen som deklarerar enum som en
                   property. T.ex:
                   <code>notificationTypes = NotificationType</code>
